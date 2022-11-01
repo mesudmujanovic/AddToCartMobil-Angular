@@ -1,0 +1,8 @@
+<h2>Product</h2>
+<hr>
+
+<div *ngFor="let product of products">
+<h4> {{product.name}} </h4>
+<p>Price:{{ product.price }}</p>
+<a class="btn btn-primary"[routerLink]="['/products', product.productId]">See details</a>
+</div>
